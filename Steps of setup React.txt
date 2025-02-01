@@ -1,0 +1,17 @@
+1)=>npm create vite@latest
+select react and after javascript
+
+2)=>point terminl in current project folder
+
+3)=>npm install
+
+4)=>npm run dev
+
+
+
+
+
+
+
+
+https://www.javatpoint.com/understanding-html-dom-events
