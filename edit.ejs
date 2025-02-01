@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.title="CRUD"</script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen bg-slate-800">
+    <h1 class="text-6xl text-center text-yellow-200 mt-9">Update User in Database</h1>
+    <div class="text-center">
+        <a href="/edit"><button class="h-12 mt-24 text-white bg-blue-600 w-80 rounded-3xl">Go To Result Page</button></a>
+    </div>
+    <div class="flex justify-center mt-14 h-96 bg-slate-100">
+        <form action="/update/<%=edituser._id%>" method="post">
+            <h1 class="text-3xl text-center">Update users</h1>
+            <h1 class="mb-4 text-center text-1xl">Enter a data</h1>
+            <label for="" class="block w-full mt-5 text-2xl text-yellow-600">Enter a Name</label>
+            <input type="text" name="name" placeholder="Enter your Name" class="text-white w-96 h-7 bg-slate-900 rounded-3xl" value="<%= edituser.name %>">
+            <label for="" class="block w-full mt-5 text-2xl text-yellow-600">Enter a Email</label>
+            <input type="text" name="email" placeholder="Enter your Email" class="text-white w-96 h-7 bg-slate-900 rounded-3xl" value="<%= edituser.email %>">
+            <label for="" class="block w-full mt-5 text-2xl text-yellow-600">Enter a Image</label>
+            <input type="text" name="image" placeholder="Enter your Image" class="text-white outline-none w-96 h-7 bg-slate-900 rounded-3xl" value="<%= edituser.image %>">
+            <button class="block h-12 mx-8 mt-8 bg-orange-400 text-zinc-800 w-80 rounded-3xl" type="submit">Enter a Data</button>
+        </form>
+    </div>
+</body>
+</html>
